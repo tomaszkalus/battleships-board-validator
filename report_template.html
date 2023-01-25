@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Raport $date</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+
+        .board {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid;
+            text-align: center;
+            border-collapse: collapse;
+            border-color: black;
+        }
+
+        td {
+            padding: 30px;
+        }
+
+        th {
+            padding: 15px
+        }
+
+        #tbl {
+            margin: 0 auto
+        }
+
+        #top-bar {
+            background-color: #4cb8f6;
+        }
+
+        #title {
+            /* text-align: center; */
+            margin-top: 0;
+            margin-bottom: 50px;
+            padding: 10px;
+            font-size: 30px;
+        }
+
+        footer {
+            box-sizing: border-box;
+            background-color: #4cb8f6;
+            padding: 10px;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .true{
+            color: green
+        }
+
+        .false{
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top-bar">
+        <p id="title">Walidator planszy do gry w statki - raport ($date)</p>
+    </div>
+
+    <div id="tbl-wrapper">
+        <table id="tbl">
+            <tr>
+                <th>Plik</th>
+                <th>Zawartość</th>
+                <th>Wyjście pliku</th>
+            </tr>
+            $output
+        </table>
+    </div>
+    <p id="summary">W folderze wejściowym znajdowało się $no_files plików.</p>
+    <p>$valid z nich zostało określonych przez skrypt jako prawidłowe.</p>
+
+
+    <footer>
+        Tomasz Kalus, Informatyka, Wydział Matematyki Stosowanej, 2023
+    </footer>
+</body>
+
+</html>
